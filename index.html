@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div id="game-container">
+  <canvas id="gameCanvas"></canvas>
+
+  <div id="ui">
+    <div>🍱 便當收集: <span id="score">0</span></div>
+    <div>🚂 行駛距離: <span id="distance">0</span> m</div>
+  </div>
+
+  <div id="message-box">📍 竹崎車站 - 準備出發！</div>
+
+  <button id="jump-btn" aria-label="Jump">跳</button>
+
+  <div id="start-screen">
+    <h1>🚂 阿里山鐵道瑪利歐</h1>
+    <p>從 <span class="highlight">竹崎車站</span> 出發，沿著林鐵攀升！</p>
+    <p>小心 <span class="highlight">觀音瀑布</span> 的落石與三角軌道。</p>
+    <p>目標：收集 <span class="highlight">奮起湖便當</span> 並抵達老街！</p>
+    <button class="btn" id="startBtn">開始遊戲</button>
+    <p style="opacity:.85;margin-top:10px;">操作：點畫面或按「跳」跳躍（桌機：空白鍵）</p>
+  </div>
+
+  <div id="game-over-screen" class="hidden">
+    <h1>💀 旅途結束</h1>
+    <p>你收集了 <span id="final-score" class="highlight">0</span> 個古早味便當</p>
+    <p>抵達地點：<span id="final-location">竹崎車站</span></p>
+    <button class="btn" id="retryBtn">重新挑戰</button>
+  </div>
+</div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
